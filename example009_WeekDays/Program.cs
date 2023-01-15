@@ -1,5 +1,5 @@
 ﻿Console.Write("Введите число: ");
-int numberA = int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine()!);
 if (numberA == 1) Console.WriteLine("Понедельник");
 if (numberA == 2) Console.WriteLine("Вторник");
 if (numberA == 3) Console.WriteLine("Среда");

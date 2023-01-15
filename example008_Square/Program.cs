@@ -1,5 +1,5 @@
 ﻿Console.Write("Введите число: ");
-int numberA = int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine()!);
 
 int squareA = numberA * numberA;
 Console.WriteLine($"Квадрат числа {numberA} равен {squareA}");
