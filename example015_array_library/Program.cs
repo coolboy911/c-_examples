@@ -1,31 +1,31 @@
-﻿void FillArray(int[] collection)
+﻿void FillArray(int[] array)
 {
-    int lenght = collection.Length;
+    int lenght = array.Length;
     int index = 0;
     while (index < lenght)
     {
-        collection[index] = new Random().Next(1, 100);
+        array[index] = new Random().Next(1, 100);
         index++;
     }
 }
 
-void PrintArray(int[] col)
+void PrintArray(int[] array)
 {
-    int count = col.Length;
+    int lenght = array.Length;
     int position = 0;
-    while (position < count)
+    while (position < lenght)
     {
-        Console.Write($"{col[position]} ");
+        Console.Write($"{array[position]} ");
         position++;
     }
 }
 
 int IndexOf(int[] collection, int find)
 {
-    int count = collection.Length;
+    int lenght = collection.Length;
     int index = 0;
     int position = -1;
-    while (index < count)
+    while (index < lenght)
     {
         if (collection[index] == find)
         {
@@ -37,11 +37,12 @@ int IndexOf(int[] collection, int find)
     return position;
 }
 
-int[] array = new int[10];
+int[] RandomArray = new int[10];
 Console.WriteLine("hello");
-FillArray(array);
-PrintArray(array);
+FillArray(RandomArray);
+// RandomArray[4] = 4;
+PrintArray(RandomArray);
 
 Console.WriteLine();
-int pos = IndexOf(array, 4);
+int pos = IndexOf(RandomArray, 4);
 Console.WriteLine(pos);
